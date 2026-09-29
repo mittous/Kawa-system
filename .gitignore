@@ -1,0 +1,11 @@
+node_modules
+dist
+
+# Environment files and secrets
+.env
+.env.*
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

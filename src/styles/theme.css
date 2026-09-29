@@ -1,0 +1,49 @@
+/*
+ * Design tokens — change any value here and the whole app updates.
+ *
+ * Every variable below is a real CSS variable (available as var(--color-primary)
+ * etc.) AND generates Tailwind utilities:
+ *   --color-primary  ->  bg-primary, text-primary, border-primary, ...
+ *   --radius-panel   ->  rounded-panel
+ */
+@theme {
+  /* Typography */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Core palette */
+  --color-ink: #111613;        /* main text */
+  --color-primary: #2e7d56;    /* primary actions, active states */
+  --color-muted: #84968f;      /* secondary text, icons */
+  --color-border: #e2ece7;     /* dividers, borders, table chips */
+  --color-surface: #f4f7f5;    /* app background, table header */
+  --color-card: #ffffff;       /* cards and panels */
+  --color-on-primary: #ffffff; /* text and icons on top of primary */
+  --color-border-strong: #d6dfda; /* outlines of buttons and controls */
+  --color-danger: #e5484d;     /* destructive icon buttons */
+  --color-info: #1d64b4;       /* secondary actions such as edit */
+
+  /* Status colors (background / foreground pairs) */
+  --color-confirmed-bg: #effde8;
+  --color-confirmed-fg: #289e00;
+  --color-waiting-bg: #fff4e5;
+  --color-waiting-fg: #b76200;
+  --color-arrived-bg: #e8f4fd;
+  --color-arrived-fg: #1d64b4;
+  --color-cancelled-bg: #fde8e8;
+  --color-cancelled-fg: #a74343;
+
+  /* VIP tag */
+  --color-vip-bg: #d7deff;
+  --color-vip-fg: #001694;
+
+  /* Skeleton placeholder (sidebar silhouette) */
+  --color-skeleton: #e6ebe8;
+
+  /* Corner radius */
+  --radius-control: 6px;       /* inputs & table controls */
+  --radius-button: 8px;        /* buttons & compact cards */
+  --radius-chip: 8px;          /* tags & status chips */
+  --radius-panel: 12px;        /* panels & content cards */
+  --radius-table: 12px;        /* table tops on the floor plan */
+  --radius-seat: 4px;          /* chairs on the floor plan */
+}
